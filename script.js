@@ -12,7 +12,9 @@ clickMe.addEventListener("click",()=>{
   clickMe.style.fontSize ="14px"
   clickMe.style.fontWeight = "700";
   arrow.style.transform ="rotate(180deg)";
-  } 
+  } else if(dropDown.style.display ="block"){
+    dropDown.style.display="none";
+  }
 }
 )
 

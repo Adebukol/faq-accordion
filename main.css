@@ -129,6 +129,7 @@ margin-top: 30px;
     flex-direction: column;
     padding: 0px;
     height: 250px;
+    max-height: 100%;
   }
   .faq{
     position: relative;
@@ -153,7 +154,8 @@ margin-top: 30px;
     left: 30px;
   }
 .attribution{
-  margin-top: 10px;
+  margin-top: 120px;
+  position: relative;
 }
 }
 @media screen and (max-width: 320px) {
