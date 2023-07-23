@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Ultra&display=swap');
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background: linear-gradient(0deg,#6565e7, #af67e9);
+  font-family: 'Kumbh Sans', sans-serif;
+  /* font-family: 'Ultra', serif; */
+  font-weight: 400, 700;
+}
+
+.container-1{
+  padding: 100px 250px;
+}
+.card{
+  background-color: hsl(0, 0%, 100%);
+  /* width: 100%; */
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 50px 50px 50px 0px;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+.faq{
+  padding-left: 50px;
+  min-width: 430px;
+}
+#accordion p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+}
+h1{
+  margin-bottom: 40px;
+}
+#accordion li{
+  list-style: none;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  padding-bottom: 20px;
+
+}
+p:hover{
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+/* #accordion img:hover{
+  transform: rotate(180deg);
+  
+}
+#accordion p + input[type="radio"]{
+  display: none;
+}
+#accordion .content{
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion p + input[type="radio"]:checked + .content{
+  max-height: 400px;
+} */
+.images{
+  margin-left: -20px;
+}
+.img1{
+  position: absolute;
+  top: 300px;
+  z-index: 9;
+  left: 140px;
+  /* position: relative; */
+  
+}
+.img2{
+  top: 10px;
+  left: -50px;
+  position: relative;
+  
+  
+}
+/* #checked{
+  font-weight: 700;
+} */
+.container{
+  border: none;
+  background: linear-gradient(to right top,#6565e7, #af67e9 );
+  /* linear-gradient(#6565e7, #af67e9) ; */
+  position:absolute;
+  left: -70px;
+  height: 100px;
+  width: 300px;
+  top: 320px;
+  z-index: 2;
+}
+
+.example{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.example:hover{
+  color: hsl(14, 88%, 65%);
+}
+.content{
+  display: none;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.cont{
+  display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+ 
+
+
+@media screen and (max-width: 500px) {
+  .card{
+    flex-direction: column;
+  }
+}
