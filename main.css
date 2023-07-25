@@ -34,7 +34,7 @@ body{
   min-height: 500px;
 }
 .faq{
-  padding-left: 50px;
+  padding-left: 20px;
   /* min-width: 430px; */
 }
 /* .faq p{
@@ -51,21 +51,36 @@ h1{
   color: hsl(14, 88%, 65%);
   cursor: pointer;
 }
+/* .image-block{
+  padding: 2rem;
+  width: 50%;
+  overflow: hidden;
+}
+
+#image {
+  display: block;
+  margin-left: -25%;
+} */
 
 .images{
-  margin-left: -20px;
+  /* margin-left: -20px; */
+  width: 50%;
+  overflow: hidden;
+  padding: 2rem;
 }
 .img1{
   position: absolute;
   top: 300px;
   z-index: 9;
-  left: 140px;
+  left: 150px;
   /* position: relative; */
   
 }
 .img2{
-  top: 10px;
-  left: -50px;
+  margin-left: -25%;
+  display: block;
+  top: -20px;
+  left: -10px;
   position: relative;  
 }
 
@@ -172,18 +187,16 @@ hr{
   .faq{
     position: relative;
     padding: 15px;
-    bottom: -70px;
+    bottom: -40px;
   }
   .faq h1{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 20px;
   }
   .example img {
     margin-left: 50px;
 }
-
-
   .item{
     padding: 10px;
     margin-bottom: 5px;
@@ -201,8 +214,7 @@ hr{
   position: absolute;
   left: 30px; 
   top: -120px;
-  
-  
+  margin-left: 0px;
   }
   .img1{
     width: 30%;

@@ -98,7 +98,7 @@ function toggleCard() {
     const headerText = item.querySelector('.question');
     headerText.style.fontSize = '12px'; // Set to default size (remove inline style)
     headerText.style.fontWeight = '400'; // Set to default weight (remove inline style)
-    arrowImages.classList.toggle('adjust', content.style.display === 'none')
+    
   }
 }
 
