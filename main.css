@@ -113,7 +113,6 @@ hr{
 }
     .item {
       overflow: hidden;
-
     }
     
     .card-header h2{
@@ -123,6 +122,11 @@ hr{
       align-items: center;
       font-weight: 400;
     }
+    .card-header.active h2{
+      font-size: 14px;
+      font-weight: 700;
+      color: #000;
+    }
     
     .card-content {
       font-size: 12px;
@@ -130,10 +134,13 @@ hr{
       padding-bottom: 10px;
     }
 .arrow{
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
   
 }
 .arrow.rotated{
+  transform: rotate(180deg);
+}
+.arrow.adjust{
   transform: rotate(180deg);
 }
 
@@ -144,8 +151,7 @@ hr{
 
 
 
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .container-1{
     padding: 20px;
     height: 100vh;
@@ -161,7 +167,7 @@ hr{
     flex-direction: column;
     padding: 0px;
     height: 300px;
-    min-height: 70%;
+    min-height: 80%;
   }
   .faq{
     position: relative;
@@ -216,3 +222,21 @@ hr{
     margin-top: 0px;
   }
 }
+/* @media (max-width: 800px){
+  .card{
+    min-height: 90%;
+    top: 300px;
+    padding: 20px;
+  }
+  .img1{
+    left: 70px;
+  }
+  .img2{
+    top:-250px;
+    left: 60px;
+  }
+  .faq{
+    margin-top:100px;
+    padding: 0px;
+  }
+} */

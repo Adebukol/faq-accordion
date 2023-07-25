@@ -79,7 +79,6 @@ function toggleCard() {
   const content = item.querySelector('.card-content');
   const arrowImages = item.querySelector('.arrow');
   const headerEl = item.querySelector('.card-header');
-  console.log(headerEl);
   
   cardContents.forEach((c) => {
     if (c !== content) {
@@ -89,13 +88,21 @@ function toggleCard() {
 
   content.style.display = content.style.display === 'none' ? 'block' : 'none';
 
-  arrowImages.classList.toggle('rotated', content.style.display === 'block')
-  headerEl.style.color = "black";
-  headerEl.style.fontWeight = '700px';
-  headerEl.style.fontSize = '14px';
+  arrowImages.classList.toggle('rotated', content.style.display === 'block');
+  
+  cardHeaders.forEach((header) => {
+    headerEl.classList.toggle('active',headerEl === this);
+  });
+  
+  if (content.style.display === 'none') {
+    const headerText = item.querySelector('.question');
+    headerText.style.fontSize = '12px'; // Set to default size (remove inline style)
+    headerText.style.fontWeight = '400'; // Set to default weight (remove inline style)
+    arrowImages.classList.toggle('adjust', content.style.display === 'none')
+  }
 }
 
 // Add click event listeners to the card headers
-cardHeaders.forEach((header) => {
-  header.addEventListener('click', toggleCard);
+cardHeaders.forEach((headerEl) => {
+  headerEl.addEventListener('click', toggleCard);
 });
